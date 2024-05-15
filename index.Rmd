@@ -5,28 +5,36 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Access to Parks and Green Spaces in Seattle
+
 
 ### Authors
 
-Names of your team members
+Kavya Rao, Maeve Zhu, Mina Trice
 
 ### Date
 
-Winter 2022
+Spring 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+For our project, we will analyze a dataset that contains data on every public park in the city of Seattle, specifically on what types of natural features and manmade amenities those parks contain. Our analysis will reveal details about the equal accessibility of the parks for citizens based on location and socioeconomic factors, what aspects of natural and recreational life are not facilitated in these parks, and even how wildlife-friendly the city is. This could be used to push the city government to enact change that makes its parks more accessible and useful for those who are not having their needs met.
+
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Environment, parks & green spaces, accessibility
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+*How common is access to parks and green spaces in Seattle? In particular, do Seattle parks tend to be accessible for people with disabilities?
+
+What natural features and manmade amenities are most and least available in Seattle parks? What is the most accessible facility in Seattle parks?
+
+Does the accessibility of parks and their important features vary by location within Seattle? Are the green areas concentrated in certain areas of the city or widely distributed?*
+
+These questions are important because access to parks and green spaces for people in urban environments is proven to have a measurable impact on their mental and physical health. However, most cities were not planned and built with this in mind, so access to these green spaces can be skewed based on location. This, in turn, is determined by socioeconomic factors and historical practices such as redlining. Furthermore, the types of amenities the parks offer to users, as well as how well-maintained they are, can encourage or discourage residents from making full use of the parks. Residents require different types of parks, from child-friendly to dog-friendly to neither one, and so may not be able to utilize green spaces that do not fit their needs.
+
 
 ### Related Work  
 
@@ -34,21 +42,23 @@ Describe your topic and related work in this space. You must include 3 citations
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+Where did you find the data? Please include a link to the data source
+
+The data is collected by the Seattle Parks and Recreation Department. It was generated to provide detailed information about the features available at various parks within the city, aiding in park management and public information dissemination. [Access the dataset here](https://data.seattle.gov/Parks-and-Recreation/Seattle-Parks-and-Recreation-Parks-Features/2cer-njie/about_data) Data is provided by City of Seattle and the dataset owner is Bhang-Barnett, Hazel. There is no sufficient information on the website that mentions how the data was collected, but one of the columns contains qualitative data, such as features. We assume that the data of features and working hours are collected from on-site investigation. The city of Seattle also have access to the dataset of each park’s xpos and ypos. The data was collected because the Seattle Parks and Recreation Department wants to make data transparent and more accessible.This allows both the city officials and the public to better understand and access the resources. There are 1000 rows and 7 columns.
+
+There are questions of power in the data. The data includes the feature, but doesn’t include the condition of the equipment. The parks belong to the government, thus the maintenance condition reflects the department’s effort put in maintaining a high-quality park. We think the government’s power may prevent them from showing the real status of the equipment.
+
+Meanwhile, there are three possible limitations and problems with the data. In the first column there are several repetitive contents because the data is describing each park's features at a time. If a park has several features, the park’s name will appear several times in the first column. This means there are less than 1000 parks, most likely around 200-300 for the data analysis. The data includes the coordinates of the parks (latitude and longitude), but it does not include addresses or zip codes, which makes it more difficult to make a graph. This means that to analyze the data by location, we will have to make our own location groups through methods such as clustering certain latitudes and longitudes together. We will have to do more research on what location groups are relevant and how to imitate groups such as neighborhoods based only on the provided coordinates. One limitation includes the lack of data in regards to the quality of park features in Seattle. For example, the dataset includes “garden” as one of the features, but lacks the information regarding the quality of the garden. How big is the garden? Is it well maintained? Is it a garden for produce/community use, or simply one for show? The same lack of clarity applies to many other features such as tennis courts (How many courts are there?), hiking trails (How long is the trail?), views (What defines a “view”?) etc.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+Countless studies show that time in nature has tangible positive effects on mood, and that having access to parks also encourages more exercise and community building. All the people of Seattle deserve to have access to parks that facilitate this. Analyzing this dataset could show that certain amenities are clustered in some locations and not readily available in others. It could also show us that park location varies by social factors such as the income of certain areas. Furthermore, there are also implications about the biodiversity within the city, specifically whether it is wildlife-friendly. If too few parks are pesticide-free or contain hiking trails or waterfront, the park cannot be a safe and diverse wildlife corridor. This raises the question of whether enough parks are accessible for all citizens of Seattle as well as for wildlife.
+
+In general, our findings could provide a direction for the city government as it prioritizes what aspects of its lands to work on. For example, they could possibly prioritize adding more greenery to parks without green features, or finding land for parks for people that do not have any access to them. Another example is that many of the provided features in the dataset relate to whether parks are child-friendly. This is important because child-friendliness encourages more people to make use of the park, and it is particularly important for children to have access to nature from a young age. Designers and policymakers could analyze this and choose to allocate funds to these features within Seattle’s parks.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+There are a few challenges and limitations in terms of our project. One limitation of this project includes the fact that this only focuses on parks in one city. We chose Seattle due to proximity and relevance to our group, however we cannot measure or generalize our findings to other cities in Washington, or across the world. As a result, our findings are limited to only Seattle. Additionally, another challenge that this project runs into is how these park features may look in the future, especially with climate change. Our project cannot predict and account for how things will change over the years, such as certain features shutting down, climate change affecting trails or waterfront areas, or maintenance quality of a park declining. Another limitation is that we are unable to see the user’s experience from this project idea. We can see some parks with fancy features, however, when you are traveling there you may find a lot of homeless people living near the park. Sometimes, there are people playing extremely loud music and doing drugs near the viewpoint. These are the unseen problems when visitors actually travel there. To build a broader and human-centric project, we should collect user experience data including qualitative data such as descriptive words based on their impression of the park.
 
 ### Summary Information
 
