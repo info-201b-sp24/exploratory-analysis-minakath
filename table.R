@@ -15,7 +15,10 @@ wilderness_data <- union(hiking_data, woods_data)
 ## There are 26 Parks with both woods and hiking trails
 
 
-final_data <- wilderness_data %>%
+final_table_data <- wilderness_data %>%
   group_by(Name, `Location 1`) %>%
   summarize(Feature_Desc = paste(Feature_Desc, collapse = ", "), .groups = 'drop')
-print(final_data)
+
+
+write.csv(final_table_data, "final_table_data.csv", row.names = TRUE)
+
