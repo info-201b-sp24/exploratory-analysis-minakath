@@ -92,3 +92,16 @@ Describe why you chose this chart and what information it reveals
 Include a chart
 
 Describe why you chose this chart and what information it reveals
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(leaflet)
+library(shiny)
+library(dplyr)
+
+final_ada_data <- read.csv("final_ada_data.csv")
+
+
+leaflet(data = final_ada_data) %>%
+  addTiles(options = providerTileOptions(noWrap = TRUE)) %>%
+  addMarkers(lng = ~xPos, lat = ~yPos, popup = ~paste("<b>", Name, "</b><br>", Feature_Desc))
+```
+
