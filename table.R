@@ -1,5 +1,5 @@
 ## “Hiking Trails” + “Woods” in “Feature_Desc” column = wilderness
-
+library("tibble")
 library("tidyverse")
 library("dplyr")
 
@@ -20,5 +20,5 @@ final_table_data <- wilderness_data %>%
   summarize(Feature_Desc = paste(Feature_Desc, collapse = ", "), .groups = 'drop')
 
 
-write.csv(final_table_data, "final_table_data.csv", row.names = TRUE)
+write.csv(final_table_data, "final_table_data.csv", row.names = FALSE)
 
