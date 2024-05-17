@@ -3,9 +3,7 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
-
-Access to Parks and Green Spaces in Seattle
+## Access to Parks and Green Spaces in Seattle
 
 
 ### Authors
