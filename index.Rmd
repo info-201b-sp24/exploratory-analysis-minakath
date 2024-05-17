@@ -38,7 +38,10 @@ These questions are important because access to parks and green spaces for peopl
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+In regards to parks and green spaces in urban areas, recent studies have further proved their importance, including locally in Seattle. A case study led by the University of Washington investigated Seattle’s biggest park, Discovery Park. When locals were surveyed on their most meaningful experience at the park, some of the main keywords included “watching birds”, “listening to waves at the beach”, “spotting wildlife”. This indicates that the wildness of Discovery Park, and urban parks in general, are important for one’s physical and mental wellbeing. (Lev et al., 2020)
+
+ Lev, E., Kahn, P. H., Chen, H., & Esperum, G. (2020). Relatively wild urban parks can promote human resilience and flourishing: A case study of discovery park, Seattle, Washington. Frontiers in Sustainable Cities, 2. https://doi.org/10.3389/frsc.2020.00002 
+
 
 ### The Dataset
 
@@ -66,9 +69,18 @@ Write a summary paragraph of findings that includes the 5 values calculated from
 
 ### Table
 
-Include a table of aggregate information
+As we discussed the importance of wild parks in urban spaces, this table below shows parks with said features. To do this, we sorted parks with the words "woods" and "hiking trails" in the features column. This showcases the almost 60 parks in Seattle with a less urban, and more wild environment.
 
-Describe why you included the table and what information it reveals
+```{r, echo = FALSE, message=FALSE, warning=FALSE}
+library(readr)
+library(kableExtra)
+final_table_data <- read_csv("final_table_data.csv")
+final_table_data %>%
+  kbl() %>%
+  kable_styling()
+
+```
+
 
 ### Chart 1
 
@@ -89,9 +101,7 @@ Describe why you chose this chart and what information it reveals
 
 ### Chart 3
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
+This interactive map showcases the number of parks in Seattle with ADA compliant amenities. This includes play areas, paths and restrooms, with some parks including all three. As we discussed earlier, the importance of accessible features in parks are crucial for everyone's enjoyment and equal accessibility to amenities. It is also important to be mindful of how we can go beyond these 128 parks w/ ADA compliant features.
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(leaflet)
 library(shiny)
