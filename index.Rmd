@@ -42,6 +42,8 @@ In regards to parks and green spaces in urban areas, recent studies have further
 
 The way that urban access to green spaces is divided based on socioeconomic factors can exacerbate the impacts of those same factors. For example, in this review of how urban green spaces impact well-being (Jabbar, M., Yusoff, M. M., & Shafie, A. (2021). Assessing the role of urban green spaces for human well-being: A systematic review. GeoJournal, 87(5), 4405–4423. https://doi.org/10.1007/s10708-021-10474-7), the authors demonstrate that authentic physical fitness (being able to keep fit simply by living an active, walking-friendly lifestyle) is often determined by proximity to green spaces.
 
+Veitch, J., Salmon, J., Crawford, D. et al. The REVAMP natural experiment study: the impact of a play-scape installation on park visitation and park-based physical activity. Int J Behav Nutr Phys Act 15, 10 (2018). https://doi.org/10.1186/s12966-017-0625-5
+This article illustrates the importance of establishing a new  play-scape that has the potential to positively influence park visitor numbers and park-based physical activity. This efficiently works for low-income family children. According to the visitors’ ages, there should be distinguished facilities for old and young people. To conclude,  when the government invests more in public park amenities, it can increase the physical health and wellbeing of residents. Thus, this article can support our research purpose of investigating the amenities situation with parks in Seattle.
 
 ### The Dataset
 
