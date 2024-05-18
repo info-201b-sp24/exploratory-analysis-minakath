@@ -40,6 +40,8 @@ In regards to parks and green spaces in urban areas, recent studies have further
 
  Lev, E., Kahn, P. H., Chen, H., & Esperum, G. (2020). Relatively wild urban parks can promote human resilience and flourishing: A case study of discovery park, Seattle, Washington. Frontiers in Sustainable Cities, 2. https://doi.org/10.3389/frsc.2020.00002 
 
+The way that urban access to green spaces is divided based on socioeconomic factors can exacerbate the impacts of those same factors. For example, in this review of how urban green spaces impact well-being (Jabbar, M., Yusoff, M. M., & Shafie, A. (2021). Assessing the role of urban green spaces for human well-being: A systematic review. GeoJournal, 87(5), 4405–4423. https://doi.org/10.1007/s10708-021-10474-7), the authors demonstrate that authentic physical fitness (being able to keep fit simply by living an active, walking-friendly lifestyle) is often determined by proximity to green spaces.
+
 
 ### The Dataset
 
