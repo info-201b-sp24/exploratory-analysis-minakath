@@ -28,7 +28,7 @@ parks_data$distance_from_center <- calculate_distance(city_center_lat, city_cent
 parks_data$feature_count <- parks_data$Name %>% str_count()
 
 # Make scatterplot
-distance_scatterplot <- ggplot(parks, aes(x = feature_count, y = distance_from_center)) +
+distance_scatterplot <- ggplot(parks_data, aes(x = feature_count, y = distance_from_center)) +
   geom_point() +
   labs(x = "Number of Features", y = "Distance from City Center (km)") +
   ggtitle("Scatterplot of Park Features and Distance from City Center")
