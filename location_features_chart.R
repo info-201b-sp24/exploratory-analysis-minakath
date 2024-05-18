@@ -1,4 +1,5 @@
 library(ggplot2)
+library(stringr)
 
 parks_data = read.csv("Seattle_Parks_and_Recreation_Parks_Features_20240515.csv")
 
