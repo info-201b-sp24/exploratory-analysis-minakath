@@ -42,6 +42,11 @@ In regards to parks and green spaces in urban areas, recent studies have further
 
 The way that urban access to green spaces is divided based on socioeconomic factors can exacerbate the impacts of those same factors. For example, in this review of how urban green spaces impact well-being (Jabbar, M., Yusoff, M. M., & Shafie, A. (2021). Assessing the role of urban green spaces for human well-being: A systematic review. GeoJournal, 87(5), 4405–4423. https://doi.org/10.1007/s10708-021-10474-7), the authors demonstrate that authentic physical fitness (being able to keep fit simply by living an active, walking-friendly lifestyle) is often determined by proximity to green spaces.
 
+<<<<<<< HEAD
+=======
+This article illustrates the importance of establishing a new  play-scape that has the potential to positively influence park visitor numbers and park-based physical activity. This efficiently works for low-income family children. According to the visitors’ ages, there should be distinguished facilities for old and young people. To conclude,  when the government invests more in public park amenities, it can increase the physical health and wellbeing of residents. Thus, this article can support our research purpose of investigating the amenities situation with parks in Seattle.
+Veitch, J., Salmon, J., Crawford, D. et al. The REVAMP natural experiment study: the impact of a play-scape installation on park visitation and park-based physical activity. Int J Behav Nutr Phys Act 15, 10 (2018). https://doi.org/10.1186/s12966-017-0625-5
+>>>>>>> d83c26f (citation)
 
 ### The Dataset
 
@@ -86,7 +91,7 @@ final_table_data %>%
 
 This scatterplot plots the distance of a park from the Seattle city center against how many different features the park has. It aims to provide a basic visualization of whether more varied and useful parks are more accessible to people in more central and urban or more peripheral and rural parts of Seattle.
 
-```
+``` {r}
 
 parks_data = read.csv("Seattle_Parks_and_Recreation_Parks_Features_20240515.csv")
 
@@ -132,7 +137,7 @@ print(distance_scatterplot)
 
 We need bar charts to count the differences in the frequency of occurrence of each category. According to research, a variety of sports facilities help to improve the physical and mental health of the neighborhood. We found that the names of facilities that appear more than 25 times mostly include those related to sports fields and restrooms, while those that appear less than four times tend to have a variety of facilities depending on the location. Both water activities and skateboarding and zipline are less frequent because they require more park terrain. This is a side note to the diversity of sports facilities in Seattle's parks.
 
-```{r, echo = FALSE, code = readLines("chart1_example. R")}
+```{r, echo = FALSE, code = readLines("feature_count. R")}
 library(dplyr)
 library(tidyr)
 library(ggplot2)
