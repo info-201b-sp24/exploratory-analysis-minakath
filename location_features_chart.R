@@ -1,3 +1,5 @@
+library(ggplot2)
+
 parks_data = read.csv("Seattle_Parks_and_Recreation_Parks_Features_20240515.csv")
 
 # Function to calculate distance of park from Seattle city center
