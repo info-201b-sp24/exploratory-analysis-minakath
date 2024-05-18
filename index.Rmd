@@ -84,9 +84,7 @@ final_table_data %>%
 
 Include a chart
 
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
+This scatterplot plots the distance of a park from the Seattle city center against how many different features the park has. It aims to provide a basic visualization of whether more varied and useful parks are more accessible to people in more central and urban or more peripheral and rural parts of Seattle.
 
 ``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
