@@ -88,7 +88,9 @@ final_table_data %>%
 
 This scatterplot plots the distance of a park from the Seattle city center against how many different features the park has. It aims to provide a basic visualization of whether more varied and useful parks are more accessible to people in more central and urban or more peripheral and rural parts of Seattle.
 
-```
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(stringr)
 
 parks_data = read.csv("Seattle_Parks_and_Recreation_Parks_Features_20240515.csv")
 
@@ -114,19 +116,20 @@ city_center_lat <- 47.608013
 city_center_lon <- -122.335167
 
 # Calculate distance from Seattle city center for each park and make new column
-parks_data$distance_from_center <- calculate_distance(city_center_lat, city_center_lon, parks$yPos, parks$xPos)
+parks_data$distance_from_center <- calculate_distance(city_center_lat, city_center_lon, parks_data$yPos, parks_data$xPos)
 
 # Count how many features each park has and make new column
-parks_data$feature_count <- parks$Name %>% str_count()
+parks_data$feature_count <- parks_data$Name %>% str_count()
 
 # Make scatterplot
-distance_scatterplot <- ggplot(parks, aes(x = feature_count, y = distance_from_center)) +
+distance_scatterplot <- ggplot(parks_data, aes(x = feature_count, y = distance_from_center)) +
   geom_point() +
   labs(x = "Number of Features", y = "Distance from City Center (km)") +
   ggtitle("Scatterplot of Park Features and Distance from City Center")
 
 # Print scatterplot
 print(distance_scatterplot)
+
 
 ```
 
