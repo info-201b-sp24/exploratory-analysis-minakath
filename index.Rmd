@@ -137,7 +137,7 @@ print(distance_scatterplot)
 
 We need bar charts to count the differences in the frequency of occurrence of each category. According to research, a variety of sports facilities help to improve the physical and mental health of the neighborhood. We found that the names of facilities that appear more than 25 times mostly include those related to sports fields and restrooms, while those that appear less than four times tend to have a variety of facilities depending on the location. Both water activities and skateboarding and zipline are less frequent because they require more park terrain. This is a side note to the diversity of sports facilities in Seattle's parks.
 
-```{r, echo = FALSE, code = readLines("chart1_example. R")}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 library(dplyr)
 library(tidyr)
 library(ggplot2)
@@ -150,10 +150,11 @@ separate_rows (Feature_Desc, sep =",, ") %>%
   arrange(desc(Count))
 feature_counts
 
-ggplot(feature_counts, aes(x = reorder(Feature_Desc, -Count), y = Count)) +
+feature_chart <- ggplot(feature_counts, aes(x = reorder(Feature_Desc, -Count), y = Count)) +
   geom_col(fill ="steelblue") +
   labs(x = "Feature", y ="Count", title = "Ranking of Features and Amenities by Count") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1,size = 6))
+print(feature_chart)
 
 ```
 
