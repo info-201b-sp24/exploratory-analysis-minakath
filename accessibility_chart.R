@@ -22,4 +22,9 @@ final_ada_data <- na.omit(final_ada_data)
 
 write.csv(final_ada_data, "final_ada_data.csv", row.names = TRUE)
 
+# testing map
+
+leaflet(data = final_ada_data) %>%
+  addTiles(options = providerTileOptions(noWrap = TRUE)) %>%
+  addMarkers(lng = ~xPos, lat = ~yPos, popup = ~paste("<b>", Name, "</b><br>", Feature_Desc))
 
